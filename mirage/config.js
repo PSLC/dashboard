@@ -4,7 +4,6 @@ export default function() {
 
   /*
     Config (with defaults).
-
     Note: these only affect routes defined *after* them!
   */
 
@@ -14,13 +13,11 @@ export default function() {
 
   /*
     Shorthand cheatsheet:
-
     this.get('/posts');
     this.post('/posts');
     this.get('/posts/:id');
     this.put('/posts/:id'); // or this.patch
     this.del('/posts/:id');
-
     http://www.ember-cli-mirage.com/docs/v0.2.0-beta.7/shorthands/
   */
 

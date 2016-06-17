@@ -13,16 +13,16 @@ export default Ember.Route.extend({
 
     model.skills.forEach(function(item) {
       skillData.push({
-        label: item.get('label'),
-        value: item.get('value'),
+        label: item.get('title'),
+        value: item.get('count'),
         id: item.get('id')
       });
     });
 
     model.misconceptions.forEach(function(item) {
       misconceptionData.push({
-        label: item.get('label'),
-        value: item.get('value'),
+        label: item.get('title'),
+        value: item.get('count'),
         id: item.get('id')
       });
     });
