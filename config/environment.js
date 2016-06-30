@@ -40,7 +40,8 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    // Use /dashboard/ as base URL for ember app
+    ENV.baseURL = '/dashboard/';
   }
 
   return ENV;
