@@ -3,7 +3,7 @@
 module.exports = function(deployTarget) {
   var ENV = {
     build: {
-      outputPath: 'deployment/'
+      outputPath: '../public/dashboard/'
     },
     // include other plugin configuration that applies to all deploy targets here
     "json-config": {}

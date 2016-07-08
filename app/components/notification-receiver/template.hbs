@@ -1,0 +1,5 @@
+{{#if isNotificationOn}}
+  <button class="negative ui button" {{action "toggleNotification"}}> Turn Off </button>
+{{else}}
+  <button class="positive ui button" {{action "toggleNotification"}}> Turn On </button>
+{{/if}}

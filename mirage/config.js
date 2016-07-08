@@ -21,70 +21,70 @@ export default function() {
     http://www.ember-cli-mirage.com/docs/v0.2.0-beta.7/shorthands/
   */
 
-  this.get('/skills', function() {
+  this.get('/skill-masteries', function() {
     return {
       data: [
         {
-          type: 'skills',
+          type: 'skill-masteries',
           id: 1,
           attributes: {
-            title: "Add/Subtract Constant From Both Sides",
+            name: "Add/Subtract Constant From Both Sides",
             count: 11
           }
         }, {
-          type: 'skills',
+          type: 'skill-masteries',
           id: 2,
           attributes: {
-            title: "Combine Constant Terms",
+            name: "Combine Constant Terms",
             count: 13
           }
         }, {
-          type: 'skills',
+          type: 'skill-masteries',
           id: 3,
           attributes: {
-            title: "Divide Both Sides By The Variable Coefficient",
+            name: "Divide Both Sides By The Variable Coefficient",
             count: 11
           }
         }, {
-          type: 'skills',
+          type: 'skill-masteries',
           id: 4,
           attributes: {
-            title: "Compute Quotient For Constant",
+            name: "Compute Quotient For Constant",
             count: 12
           }
         }, {
-          type: 'skills',
+          type: 'skill-masteries',
           id: 5,
           attributes: {
-            title: "Compute Quotient For Variable Coefficient",
+            name: "Compute Quotient For Variable Coefficient",
             count: 11
           }
         }, {
-          type: 'skills',
+          type: 'skill-masteries',
           id: 6,
           attributes: {
-            title: "Multiply Simple Terms",
+            name: "Multiply Simple Terms",
             count: 8
           }
         }, {
-          type: 'skills',
+          type: 'skill-masteries',
           id: 7,
           attributes: {
-            title: "Distribute",
+            name: "Distribute",
             count: 8
           }
         }, {
-          type: 'skills',
+          type: 'skill-masteries',
           id: 8,
           attributes: {
-            title: "Combine Variable Terms",
+            name: "Combine Variable Terms",
             count: 7
           }
         }, {
-          type: 'skills',
+          type: 'skill-masteries',
           id: 9,
           attributes: {
-            title: "Add/Subtract Variable From Both Sides",
+            name: "Add/Subtract Variable From Both Sides",
             count: 7
           }
         }
@@ -99,35 +99,35 @@ export default function() {
           type: 'misconceptions',
           id: 1,
           attributes: {
-            title: "Combine unlike terms to make constant",
+            name: "Combine unlike terms to make constant",
             count: 8
           }
         }, {
           type: 'misconceptions',
           id: 2,
           attributes: {
-            title: "Combine unlike terms to make variable",
+            name: "Combine unlike terms to make variable",
             count: 8
           }
         }, {
           type: 'misconceptions',
           id: 3,
           attributes: {
-            title: "Different transformation on both sides",
+            name: "Different transformation on both sides",
             count: 2
           }
         }, {
           type: 'misconceptions',
           id: 4,
           attributes: {
-            title: "Do transformation on one side only",
+            name: "Do transformation on one side only",
             count: 6
           }
         }, {
           type: 'misconceptions',
           id: 5,
           attributes: {
-            title: "Substract instead of divide",
+            name: "Substract instead of divide",
             count: 1
           }
         }
