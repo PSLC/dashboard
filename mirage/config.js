@@ -21,6 +21,130 @@ export default function() {
     http://www.ember-cli-mirage.com/docs/v0.2.0-beta.7/shorthands/
   */
 
+  this.get('/skills', function() {
+    return {
+      data: [
+        {
+          type: 'skills',
+          id: 1,
+          attributes: {
+            name: "Add/Subtract Constant From Both Sides"
+          }
+        }, {
+          type: 'skills',
+          id: 2,
+          attributes: {
+            name: "Combine Constant Terms",
+          }
+        }, {
+          type: 'skills',
+          id: 3,
+          attributes: {
+            name: "Divide Both Sides By The Variable Coefficient"
+          }
+        }, {
+          type: 'skills',
+          id: 4,
+          attributes: {
+            name: "Compute Quotient For Constant"
+          }
+        }, {
+          type: 'skills',
+          id: 5,
+          attributes: {
+            name: "Compute Quotient For Variable Coefficient"
+          }
+        }, {
+          type: 'skills',
+          id: 6,
+          attributes: {
+            name: "Multiply Simple Terms"
+          }
+        }, {
+          type: 'skills',
+          id: 7,
+          attributes: {
+            name: "Distribute"
+          }
+        }, {
+          type: 'skills',
+          id: 8,
+          attributes: {
+            name: "Combine Variable Terms"
+          }
+        }, {
+          type: 'skills',
+          id: 9,
+          attributes: {
+            name: "Add/Subtract Variable From Both Sides"
+          }
+        }
+      ]
+    };
+  });
+
+  this.get('/students', function() {
+    return {
+      data: [
+        {
+          type: 'students',
+          id: 1,
+          attributes: {
+            name: "Adeline Sweet"
+          }
+        }, {
+          type: 'students',
+          id: 2,
+          attributes: {
+            name: "Austin Smith",
+          }
+        }, {
+          type: 'students',
+          id: 3,
+          attributes: {
+            name: "Christina Day"
+          }
+        }, {
+          type: 'students',
+          id: 4,
+          attributes: {
+            name: "Faith Aller"
+          }
+        }, {
+          type: 'students',
+          id: 5,
+          attributes: {
+            name: "Gaven Moore"
+          }
+        }, {
+          type: 'students',
+          id: 6,
+          attributes: {
+            name: "Haley Barkovich"
+          }
+        }, {
+          type: 'students',
+          id: 7,
+          attributes: {
+            name: "Kai Swan"
+          }
+        }, {
+          type: 'students',
+          id: 8,
+          attributes: {
+            name: "Landin Pillar"
+          }
+        }, {
+          type: 'students',
+          id: 9,
+          attributes: {
+            name: "Leah Driscoll"
+          }
+        }
+      ]
+    };
+  });
+
   this.get('/skill-masteries', function() {
     return {
       data: [
@@ -28,69 +152,143 @@ export default function() {
           type: 'skill-masteries',
           id: 1,
           attributes: {
-            name: "Add/Subtract Constant From Both Sides",
-            count: 11
+            "student-id": 1,
+            "skill-id": 2,
+            percentage: 0.96
           }
         }, {
           type: 'skill-masteries',
           id: 2,
           attributes: {
-            name: "Combine Constant Terms",
-            count: 13
+            "student-id": 1,
+            "skill-id": 3,
+            percentage: 0.96
           }
         }, {
           type: 'skill-masteries',
           id: 3,
           attributes: {
-            name: "Divide Both Sides By The Variable Coefficient",
-            count: 11
+            "student-id": 2,
+            "skill-id": 1,
+            percentage: 0.96
           }
         }, {
           type: 'skill-masteries',
           id: 4,
           attributes: {
-            name: "Compute Quotient For Constant",
-            count: 12
+            "student-id": 2,
+            "skill-id": 2,
+            percentage: 0.96
           }
         }, {
           type: 'skill-masteries',
           id: 5,
           attributes: {
-            name: "Compute Quotient For Variable Coefficient",
-            count: 11
+            "student-id": 2,
+            "skill-id": 3,
+            percentage: 0.96
           }
         }, {
           type: 'skill-masteries',
           id: 6,
           attributes: {
-            name: "Multiply Simple Terms",
-            count: 8
+            "student-id": 2,
+            "skill-id": 4,
+            percentage: 0.96
           }
         }, {
           type: 'skill-masteries',
           id: 7,
           attributes: {
-            name: "Distribute",
-            count: 8
+            "student-id": 3,
+            "skill-id": 7,
+            percentage: 0.96
           }
         }, {
           type: 'skill-masteries',
           id: 8,
           attributes: {
-            name: "Combine Variable Terms",
-            count: 7
+            "student-id": 5,
+            "skill-id": 8,
+            percentage: 0.96
           }
         }, {
           type: 'skill-masteries',
           id: 9,
           attributes: {
-            name: "Add/Subtract Variable From Both Sides",
-            count: 7
+            "student-id": 7,
+            "skill-id": 4,
+            percentage: 0.96
+          }
+        }, {
+          type: 'skill-masteries',
+          id: 10,
+          attributes: {
+            "student-id": 2,
+            "skill-id": 8,
+            percentage: 0.96
+          }
+        }, {
+          type: 'skill-masteries',
+          id: 11,
+          attributes: {
+            "student-id": 3,
+            "skill-id": 2,
+            percentage: 0.96
+          }
+        }, {
+          type: 'skill-masteries',
+          id: 12,
+          attributes: {
+            "student-id": 5,
+            "skill-id": 1,
+            percentage: 0.96
+          }
+        }, {
+          type: 'skill-masteries',
+          id: 13,
+          attributes: {
+            "student-id": 7,
+            "skill-id": 4,
+            percentage: 0.96
+          }
+        }, {
+          type: 'skill-masteries',
+          id: 14,
+          attributes: {
+            "student-id": 2,
+            "skill-id": 4,
+            percentage: 0.96
+          }
+        }, {
+          type: 'skill-masteries',
+          id: 15,
+          attributes: {
+            "student-id": 3,
+            "skill-id": 5,
+            percentage: 0.96
+          }
+        }, {
+          type: 'skill-masteries',
+          id: 16,
+          attributes: {
+            "student-id": 6,
+            "skill-id": 5,
+            percentage: 0.96
+          }
+        }, {
+          type: 'skill-masteries',
+          id: 17,
+          attributes: {
+            "student-id": 7,
+            "skill-id": 2,
+            percentage: 0.96
           }
         }
       ]
     };
   });
+
 
   this.get('/misconceptions', function() {
     return {
