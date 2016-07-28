@@ -5,5 +5,6 @@ import attr from 'ember-data/attr';
 export default Model.extend({
   studentId: attr(),
   skillId: attr(),
-  percentage: attr()
+  percentage: attr(),
+  opportunity: attr()
 });

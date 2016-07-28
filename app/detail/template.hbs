@@ -7,20 +7,20 @@
       </svg> Mastered <svg style="display:inline;" height="20" width="20">
         <circle cx="14" cy="50%" r="3" stroke-width="0" fill="#888888"/>
       </svg> Not Mastered</h3>
-      <table class="ui definition very padded small table">
+      <table class="ui definition very padded small selectable table">
         <thead>
           <tr class="center aligned">
             <th></th>
-            {{#each model.students as |student|}}
+            {{#each students as |student|}}
               <th>{{student.name}}</th>
             {{/each}}
           </tr>
         </thead>
         <tbody>
-          {{#each model.skills as |skill|}}
-            <tr>
-              <td class="right aligned">{{skill.name}}</td>
-              {{#each model.students as |student|}}
+          {{#each skills as |skill|}}
+            <tr class="{{if (eq skill.id skillSelected) "positive"}}">
+              <td class="right aligned selectable"><a href="javascript:;" {{action "sortBySkill" skill.id}}>{{skill.name}}</a></td>
+              {{#each students as |student|}}
                 <td class="center aligned">
                   {{#if (get-skill-mastery skillMasteries skill.id student.id)}}
                     <svg style="display:inline;" height="20" width="20">

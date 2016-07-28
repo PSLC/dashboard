@@ -9,14 +9,20 @@ export default Ember.Route.extend({
     });
   },
   setupController(controller, model) {
-    var skillMasteries = [];
+    var skillMasteries = {};
 
     model.skillMasteries.forEach(function(item) {
-      var key = item.get('skillId') + '-' + item.get('studentId');
-      skillMasteries[key] = true;
+      var skillId = item.get('skillId');
+      var studentId = item.get('studentId');
+      if (!skillMasteries[skillId]) {
+        skillMasteries[skillId] = {};
+      }
+      skillMasteries[skillId][studentId] = true;
     });
 
     controller.set('model', model);
+    controller.set('skills', model.skills);
+    controller.set('students', model.students);
     controller.set("skillMasteries", skillMasteries);
   }
 });
