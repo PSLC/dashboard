@@ -14,10 +14,12 @@ export default Ember.Route.extend({
     model.skillMasteries.forEach(function(item) {
       var skillId = item.get('skillId');
       var studentId = item.get('studentId');
+      var percentage = item.get('percentage');
+      var opportunity = item.get('opportunity');
       if (!skillMasteries[skillId]) {
         skillMasteries[skillId] = {};
       }
-      skillMasteries[skillId][studentId] = true;
+      skillMasteries[skillId][studentId] = {percentage: percentage, opportunity: opportunity};
     });
 
     controller.set('model', model);

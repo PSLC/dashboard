@@ -1,12 +1,16 @@
 <div class="ui padded centered grid">
   <div class="fifteen wide column">
     <div class="ui vertical segment">
-      <h2 class="ui center aligned block header"> Mr. Gill, Period 6 (13 students), 05/04-05/06/16 </h2>
-      <h3 class="ui center aligned block header"> What skills has each student mastered? <svg style="display:inline;" height="20" width="56">
-        <circle cx="44" cy="50%" r="6" stroke-width="0" fill="#1E4D8F"/>
-      </svg> Mastered <svg style="display:inline;" height="20" width="20">
-        <circle cx="14" cy="50%" r="3" stroke-width="0" fill="#888888"/>
-      </svg> Not Mastered</h3>
+      <h2 class="ui center aligned block header"> Mr. Gill, Period 6 (9 students), 05/04-05/06/16 </h2>
+      <h3 class="ui center aligned block header"> What skills has each student mastered? </h3>
+      <div class="ui center aligned">
+        <i class="green large checkmark icon"></i>
+        Mastered
+        <svg class="svg-inline" height="20" width="36">
+          <circle cx="24" cy="50%" r="6" stroke-width="0" fill="#34AADC"/>
+        </svg>
+        Not Given Enough Opportunity
+      </div>
       <table class="ui definition very padded small selectable table">
         <thead>
           <tr class="center aligned">
@@ -22,15 +26,7 @@
               <td class="right aligned selectable"><a href="javascript:;" {{action "sortBySkill" skill.id}}>{{skill.name}}</a></td>
               {{#each students as |student|}}
                 <td class="center aligned">
-                  {{#if (get-skill-mastery skillMasteries skill.id student.id)}}
-                    <svg style="display:inline;" height="20" width="20">
-                      <circle cx="50%" cy="50%" r="6" stroke-width="0" fill="#1E4D8F"/>
-                    </svg>
-                  {{else}}
-                    <svg style="display:inline;" height="20" width="20">
-                      <circle cx="50%" cy="50%" r="3" stroke-width="0" fill="#888888"/>
-                    </svg>
-                  {{/if}}
+                  {{circle-indicator indicatorType=(get-skill-mastery skillMasteries skill.id student.id)}}
                 </td>
               {{/each}}
             </tr>

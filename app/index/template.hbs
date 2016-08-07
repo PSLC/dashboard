@@ -1,34 +1,44 @@
-<div class="ui padded grid">
+<div class="ui padded centered grid">
   <div class="row">
     <div class="sixteen wide column">
-      <h3 class="ui center aligned block header"> Mr. Gill, Period 6 (13 students), 05/04-05/06/16 </h3>
+      <h2 class="ui center aligned block header"> Mr. Gill, Period 6 (9 students), 05/04-05/06/16 </h2>
     </div>
   </div>
-  <div class="eight wide column">
+  <div class="row">
+    <div class="fourteen wide column">
+      <div class="ui two item menu">
+        <a class="item {{if (eq menu "detail") "active"}}" {{action "selectMenu" "detail"}}>Student Detail</a>
+        <a class="item {{if (eq menu "overview") "active"}}" {{action "selectMenu" "overview"}}>Assignment Overview</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    {{#if (eq menu "detail")}}
+      {{student-detail skills=skills skillMasteries=skillMasteries students=students}}
+    {{else if (eq menu "overview")}}
+      <div class="seven wide column">
+        <div class="ui vertical segment">
+          <h3 class="ui center aligned block header"> How many students have mastered the skills? </h3>
+          {{bullet-chart skills=skills students=students skillMasteries=skillMasteries}}
+        </div>
+      </div>
+      <div class="seven wide column">
+        <div class="ui vertical segment">
+          <h3 class="ui center aligned block header"> How many students have misconceptions? </h3>
+        </div>
+      </div>
+    {{/if}}
+  </div>
+  {{!-- <div class="eight wide column">
     <div class="ui vertical segment">
       <h3 class="ui center aligned block header"> How many students have mastered the skills? </h3>
-      {{
-        horizontal-bar-chart
-        maxBarThickness=40
-        data=skill-data
-        sortKey=id
-        selectedSeedColor="#1E4D8F"
-      }}
+
     </div>
-    {{!-- <div class="ui vertical segment">
-      <h3 class="ui center aligned block header"> How many students have misconceptions? </h3>
-      {{
-        horizontal-bar-chart
-        maxBarThickness=40
-        data=misconception-data
-        sortKey=id
-        selectedSeedColor="#CE612C"
-      }}
-    </div> --}}
   </div>
   <div class="eight wide column">
     <div class="ui vertical segment">
       <h3 class="ui center aligned block header"> Which skills take a lot of practice? </h3>
     </div>
-  </div>
+  </div> --}}
 </div>

@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
   actions:{
     sortBySkill(skillId) {
-      var skillMasteries = this.get("skillMasteries");
+      /*var skillMasteries = this.get("skillMasteries");
       var model = this.get("model");
       var students = [];
       if (skillMasteries[skillId]) {
@@ -24,7 +24,7 @@ export default Ember.Controller.extend({
       } else {
         this.set('skillSelected', null);
         this.set('students', model.students);
-      }
+      }*/
     }
   }
 });

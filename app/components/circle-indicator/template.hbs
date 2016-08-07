@@ -1,0 +1,11 @@
+{{#if (eq indicatorType "skillMastered")}}
+  <i class="green large checkmark icon"></i>
+{{else if (eq indicatorType "skillNotMastered")}}
+  <svg class="svg-inline" height="12" width="12">
+    <circle cx="50%" cy="50%" r="6" stroke-width="0" fill="#FF9500"/>
+  </svg>
+{{else if (eq indicatorType "NotEnoughOpportunity")}}
+  <svg class="svg-inline" height="12" width="12">
+    <circle cx="50%" cy="50%" r="3" stroke-width="0" fill="#34AADC"/>
+  </svg>
+{{/if}}

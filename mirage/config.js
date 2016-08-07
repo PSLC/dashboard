@@ -154,7 +154,35 @@ export default function() {
           attributes: {
             "student-id": 1,
             "skill-id": 2,
-            percentage: 0.96
+            percentage: 0.98,
+            opportunity: 15
+          }
+        },{
+          type: 'skill-masteries',
+          id: 91,
+          attributes: {
+            "student-id": 1,
+            "skill-id": 3,
+            percentage: 0.98,
+            opportunity: 15
+          }
+        },{
+          type: 'skill-masteries',
+          id: 92,
+          attributes: {
+            "student-id": 1,
+            "skill-id": 4,
+            percentage: 0.98,
+            opportunity: 15
+          }
+        },{
+          type: 'skill-masteries',
+          id: 93,
+          attributes: {
+            "student-id": 1,
+            "skill-id": 6,
+            percentage: 0.98,
+            opportunity: 15
           }
         }, {
           type: 'skill-masteries',
@@ -162,7 +190,8 @@ export default function() {
           attributes: {
             "student-id": 1,
             "skill-id": 3,
-            percentage: 0.96
+            percentage: 0.75,
+            opportunity: 15
           }
         }, {
           type: 'skill-masteries',
@@ -170,7 +199,8 @@ export default function() {
           attributes: {
             "student-id": 2,
             "skill-id": 1,
-            percentage: 0.96
+            percentage: 0.40,
+            opportunity: 3
           }
         }, {
           type: 'skill-masteries',
@@ -178,7 +208,8 @@ export default function() {
           attributes: {
             "student-id": 2,
             "skill-id": 2,
-            percentage: 0.96
+            percentage: 0.97,
+            opportunity: 20
           }
         }, {
           type: 'skill-masteries',
@@ -186,7 +217,8 @@ export default function() {
           attributes: {
             "student-id": 2,
             "skill-id": 3,
-            percentage: 0.96
+            percentage: 0.92,
+            opportunity: 10
           }
         }, {
           type: 'skill-masteries',
@@ -194,7 +226,8 @@ export default function() {
           attributes: {
             "student-id": 2,
             "skill-id": 4,
-            percentage: 0.96
+            percentage: 0.98,
+            opportunity: 10
           }
         }, {
           type: 'skill-masteries',
@@ -202,7 +235,8 @@ export default function() {
           attributes: {
             "student-id": 3,
             "skill-id": 7,
-            percentage: 0.96
+            percentage: 0.92,
+            opportunity: 10
           }
         }, {
           type: 'skill-masteries',
@@ -210,7 +244,8 @@ export default function() {
           attributes: {
             "student-id": 5,
             "skill-id": 8,
-            percentage: 0.96
+            percentage: 0.92,
+            opportunity: 10
           }
         }, {
           type: 'skill-masteries',
@@ -218,7 +253,8 @@ export default function() {
           attributes: {
             "student-id": 7,
             "skill-id": 4,
-            percentage: 0.96
+            percentage: 0.98,
+            opportunity: 10
           }
         }, {
           type: 'skill-masteries',
@@ -226,7 +262,8 @@ export default function() {
           attributes: {
             "student-id": 2,
             "skill-id": 8,
-            percentage: 0.96
+            percentage: 0.92,
+            opportunity: 10
           }
         }, {
           type: 'skill-masteries',
@@ -234,7 +271,8 @@ export default function() {
           attributes: {
             "student-id": 3,
             "skill-id": 2,
-            percentage: 0.96
+            percentage: 0.98,
+            opportunity: 10
           }
         }, {
           type: 'skill-masteries',
@@ -242,7 +280,8 @@ export default function() {
           attributes: {
             "student-id": 5,
             "skill-id": 1,
-            percentage: 0.96
+            percentage: 0.92,
+            opportunity: 10
           }
         }, {
           type: 'skill-masteries',
@@ -250,7 +289,8 @@ export default function() {
           attributes: {
             "student-id": 7,
             "skill-id": 4,
-            percentage: 0.96
+            percentage: 0.98,
+            opportunity: 10
           }
         }, {
           type: 'skill-masteries',
@@ -258,7 +298,8 @@ export default function() {
           attributes: {
             "student-id": 2,
             "skill-id": 4,
-            percentage: 0.96
+            percentage: 0.92,
+            opportunity: 10
           }
         }, {
           type: 'skill-masteries',
@@ -266,7 +307,8 @@ export default function() {
           attributes: {
             "student-id": 3,
             "skill-id": 5,
-            percentage: 0.96
+            percentage: 0.92,
+            opportunity: 10
           }
         }, {
           type: 'skill-masteries',
@@ -274,7 +316,8 @@ export default function() {
           attributes: {
             "student-id": 6,
             "skill-id": 5,
-            percentage: 0.96
+            percentage: 0.98,
+            opportunity: 12
           }
         }, {
           type: 'skill-masteries',
@@ -282,7 +325,107 @@ export default function() {
           attributes: {
             "student-id": 7,
             "skill-id": 2,
-            percentage: 0.96
+            percentage: 0.20,
+            opportunity: 3
+          }
+        }, {
+          type: 'skill-masteries',
+          id: 19,
+          attributes: {
+            "student-id": 8,
+            "skill-id": 9,
+            percentage: 0.98,
+            opportunity: 10
+          }
+        }, {
+          type: 'skill-masteries',
+          id: 20,
+          attributes: {
+            "student-id": 8,
+            "skill-id": 8,
+            percentage: 0.98,
+            opportunity: 12
+          }
+        }, {
+          type: 'skill-masteries',
+          id: 21,
+          attributes: {
+            "student-id": 8,
+            "skill-id": 7,
+            percentage: 0.20,
+            opportunity: 13
+          }
+        }, {
+          type: 'skill-masteries',
+          id: 55,
+          attributes: {
+            "student-id": 9,
+            "skill-id": 1,
+            percentage: 0.98,
+            opportunity: 10
+          }
+        }, {
+          type: 'skill-masteries',
+          id: 56,
+          attributes: {
+            "student-id": 9,
+            "skill-id": 3,
+            percentage: 0.98,
+            opportunity: 12
+          }
+        }, {
+          type: 'skill-masteries',
+          id: 57,
+          attributes: {
+            "student-id": 9,
+            "skill-id": 7,
+            percentage: 0.98,
+            opportunity: 30
+          }
+        }, {
+          type: 'skill-masteries',
+          id: 65,
+          attributes: {
+            "student-id": 7,
+            "skill-id": 5,
+            percentage: 0.98,
+            opportunity: 10
+          }
+        }, {
+          type: 'skill-masteries',
+          id: 66,
+          attributes: {
+            "student-id": 8,
+            "skill-id": 5,
+            percentage: 0.98,
+            opportunity: 12
+          }
+        }, {
+          type: 'skill-masteries',
+          id: 67,
+          attributes: {
+            "student-id": 9,
+            "skill-id": 5,
+            percentage: 0.98,
+            opportunity: 3
+          }
+        }, {
+          type: 'skill-masteries',
+          id: 68,
+          attributes: {
+            "student-id": 4,
+            "skill-id": 5,
+            percentage: 0.98,
+            opportunity: 13
+          }
+        }, {
+          type: 'skill-masteries',
+          id: 48,
+          attributes: {
+            "student-id": 6,
+            "skill-id": 7,
+            percentage: 0.98,
+            opportunity: 13
           }
         }
       ]
